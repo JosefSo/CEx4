@@ -50,10 +50,10 @@ int main()
         }
         if (choice == 'S')
         {
-            int src = -1, dest = -1;
-            scanf("%d %d", &src, &dest);
-            int dis = shortestPath(*head, src, dest);
-            printf("Dijsktra shortest path: %d \n", dis);
+            int start = -1, end = -1;
+            scanf("%d %d", &start, &end);
+            int dist = shortestPath(*head, start, end);
+            printf("Dijsktra shortest path: %d \n", dist);
             continue;
         }
         if (choice == 'T')
